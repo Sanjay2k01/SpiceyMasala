@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    padding:10px;
+    box-shadow:2px 2px 10px black;
+    background-color: black;
+}
+.navbar .navbar-brand{
+    font-size:25px;
+    font-weight: 800;
+    color: lightgreen;
+}
+#navbarSupportedContent a{
+    color: whitesmoke;
+    padding:12px;
+    border-bottom: solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: lightgreen;
+}
+#navbarSupportedContent button{
+    background-color: lightgreen;
+    border-radius:10px;
+}
+section{
+    width:100%;
+    min-height:100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#home{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("bg.jfif");
+    background-position:center;
+    background-size: cover;
+    flex-direction:column;
+}
+#home h1{
+    font-size:100px;
+    color:ghostwhite;
+    letter-spacing:4px;
+}
+#home p{
+    color: ghostwhite;
+    font-size: 20px;
+}
+#home .input-group{
+    width:30%;
+    height:20px;
+}
+.signin{
+    color: ghostwhite;
+    background-color:green;
+    box-shadow: 2px 3px 10px black;
+}
+#about{
+    background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.9));
+}
+#about h1{
+    font-size:90px;
+    color:ghostwhite;
+    letter-spacing:4px;
+}
+#about p{
+    color: ghostwhite;
+    font-size: 20px;
+}
+#product{
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,1));
+}
+#product img{
+    width:200px;
+    height:200px;
+}
+#product h1{
+    font-size:90px;
+    color:ghostwhite;
+    letter-spacing:3px;
+}
+.card{
+    width:250px;
+    height:300px;
+    background:linear-gradient(rgba(0,0,1,0.1),rgba(0,0,5,0.1));
+    justify-content: center;
+    align-items: center;
+    border-radius:25px;
+    margin:20px 60px;
+    color:ghostwhite;
+    box-shadow:   3px 2px 4px lavender,
+                -2px -3px 4px lightcyan;
+
+}
+.card:hover{
+    box-shadow:   -2px -3px 4px lavender,
+                   3px 2px 4px lightcyan;
+    background-color:rgba(130,30,48,0.1);
+    transition: 0.5s;
+}
+#contact img{
+    height:100%;
+}
+#contact h1{
+    font-size:90px;
+    color:ghostwhite;
+    letter-spacing:3px;
+}
+#contact{
+    background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.9));
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin:10px 0;
+}
+#contact textarea{
+    margin:10px 0;
+}
+footer{
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    text-align: center;
+    width: 100%;
+    height:50px;
+    color:lightcyan;
+}
